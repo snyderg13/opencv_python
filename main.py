@@ -4,6 +4,8 @@ import sys
 def main():
     print("Hello from opencv-test!")
     
+    # @TODO: figure out how to get better detect
+    #        available cams and choose desired
     cap = cv2.VideoCapture(0)
     if not cap.isOpened():
         print("Err: Could not open cam")
@@ -11,6 +13,7 @@ def main():
     
     print("Cam opened successfully")
     
+    # @TODO: err/exc handling to get more info
     while True:
         ret, frame = cap.read()
         if not ret:
