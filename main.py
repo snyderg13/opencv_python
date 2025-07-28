@@ -14,6 +14,7 @@ def main():
     print("Cam opened successfully")
     
     # @TODO: err/exc handling to get more info
+    #        about the failure
     while True:
         ret, frame = cap.read()
         if not ret:
